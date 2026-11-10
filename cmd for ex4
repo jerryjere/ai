@@ -1,0 +1,13 @@
+python -m venv llm_env
+
+.\llm_env\Scripts\Activate.ps1
+
+If activation is blocked, run:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\llm_env\Scripts\Activate.ps1
+
+python -m pip install --upgrade pip
+
+python -m pip install torch transformers gradio accelerate safetensors
+
+python ex4.py
