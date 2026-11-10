@@ -1,0 +1,16 @@
+python -m venv llm_env
+
+.\llm_env\Scripts\Activate.ps1
+
+If activation is blocked, run:
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\llm_env\Scripts\Activate.ps1
+
+
+python -m pip install --upgrade pip
+python -m pip install ollama
+python -m pip install scikit-learn
+python -m pip install ollama scikit-learn
+ollama pull codellama
+ollama list
+python ex2.py
