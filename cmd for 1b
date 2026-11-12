@@ -7,6 +7,8 @@ If activation is blocked, run:
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\llm_env\Scripts\Activate.ps1
 
+$env:OPENAI_API_KEY=" "
+
 python -m pip install --upgrade pip
 python -m pip install ollama
 
